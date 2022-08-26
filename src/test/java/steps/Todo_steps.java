@@ -83,6 +83,10 @@ public class Todo_steps {
     public void filter_todos(String filterType){
         objTodo.filterTodos(filterType);
     }
+    @When("I clear completed todos")
+    public void clear_completed(){
+        objTodo.clearCompletedTodos();
+    }
 
     @Then("{int} todo list is active")
     public void verify_active_todo_count(int count){

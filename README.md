@@ -1,7 +1,7 @@
 This repository contains a basic framework to test the TodoMVC application (https://todomvc.com/examples/vue)
 which allows users to add, edit, delete, complete and filter active/completed todo lists.
 
-This behavioral driven development automation framework uses Selenium, cucumber-java, cucumber-junit, 
+This behavioral driven development automation framework uses Selenium, cucumber-java, cucumber-junit, BDD,
 Page Objects Patterns and Maven as build tool.
 
 Installation (pre-requisites)
@@ -10,7 +10,7 @@ Installation (pre-requisites)
 1. Install Java and set path
 2. Install maven and set path
 3. For simplicity, this project by default allows the tests to run locally with Chrome. Please install ChromeDriver, and add its location to your system PATH.
-4. Clone repository 
+4. Clone repository git@github.com:thaiching/Todo-Selenium-Java.git
 6. To install all dependencies, run
    $ mvn clean install
 
