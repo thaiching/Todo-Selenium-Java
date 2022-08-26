@@ -21,6 +21,8 @@ public class TodoPage extends BasePage{
     private final By todoToggle = By.cssSelector(".toggle");
     private final By header = By.tagName("h1");
     private final By todoList = By.className("todo-list");
+
+    private final By clearCompletedBtn = By.className("clear-completed");
     private WebElement activeTodoEdit;
     private WebElement activeTodoToBeDeleted;
     public TodoPage(WebDriver driver) {
@@ -112,6 +114,10 @@ public class TodoPage extends BasePage{
 
     public void completeTodo(int index){
         findTodo(index).findElement(todoToggle).click();
+    }
+
+    public void clearCompletedTodos(){
+        find(clearCompletedBtn).click();
     }
 
     public WebElement findActiveTodoEditInput(int index) {

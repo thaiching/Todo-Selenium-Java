@@ -31,6 +31,18 @@ Feature: TodoMVCFeature
     When I filter completed todos
     Then 1 todo list is completed
 
+  Scenario: Complete an existing todo list and clear completed todos
+      And I have these todos on my list
+      | my to do list 1 |
+      | my to do list 2 |
+      | my to do list 3 |
+      When I complete to do list in position 2
+      And I clear completed todos
+      Then 0 todo list is completed
+
+
+
+
 
 
 
